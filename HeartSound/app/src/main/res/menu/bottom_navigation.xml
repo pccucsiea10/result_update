@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/person"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="基本資料" />
+    <item
+        android:id="@+id/teaching"
+        android:icon="@drawable/ic_baseline_help_outline_24"
+        android:title="新手教學"/>
+    <item
+        android:id="@+id/start"
+        android:icon="@drawable/ic_sharp_list_alt_24"
+        android:title="測驗開始"/>
+    <item
+        android:id="@+id/result"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:title="結果分析"/>
+</menu>

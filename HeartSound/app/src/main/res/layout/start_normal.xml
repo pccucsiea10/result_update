@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEB">
+
+
+        <TextView
+            android:id="@+id/First"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基礎測量"
+            android:textColor="#B9B9B9"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/line"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:background="#B9B9B9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/First"
+            app:layout_constraintVertical_bias="0.024" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="測驗開始前之相關注意事項"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/line"
+            app:layout_constraintTop_toBottomOf="@+id/line"
+            app:layout_constraintVertical_bias="0.031" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="308dp"
+            android:layout_height="298dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.033">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="以下是基礎測量流程及規則：\n \n1. 因需要測量您觀看不同情緒視頻之心率，請您保持情緒平穩後再進行測驗，以防影響數據\n2. 點擊[ 開始測量]後將立刻開始測量\n3. 分為第一次測量及第二次測量兩部分\n4. 畫面會顯示剩餘測量時間(以倒數計時器方式)\n 5. 如有突發狀況之發生時，即可點擊[ 停止測量]以結束測量\n6. 測驗完後會跳到結果畫面，點擊[ 返回測驗介面]回到測驗介面進行下一步"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/normal_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="測驗開始"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FF6363"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintVertical_bias="0.057" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

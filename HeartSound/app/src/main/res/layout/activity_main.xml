@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEB">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/checkBox"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="開始使用"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:backgroundTint="@drawable/bg_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="我已閱讀並同意上述的條款說明"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/scrollView3"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="315dp"
+            android:layout_height="396dp"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_one">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/text_one"
+                android:layout_centerHorizontal="true"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_one"
+                app:layout_constraintVertical_bias="0.045">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="當您使用本APP「心聲」，即表示您已閱讀並同意本條款之所有內容。本系統極重視個人隱私權，在您開始使用本APP之前，告知您相關事項，俾取得您同意本研究蒐集、處理及利用您的個人資料：\n\n一、蒐集目的：\n本系統基於研究心率與您的興趣程度之關聯性，在您使用本APP之同時，將會蒐集、處理及利用您的個人資料。\n\n二、個人資料之類別：\n1、基本資料（如姓名）\n2、生理資訊（如心率）\n\n三、個人資料使用之期間及方式：\n將您所實測之數據，依您的個人生理資訊，進行蒐集、演算法運算、可視化功能等，將實測結果之統計圖之方式呈現給您。"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/text_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:text='使用本APP "心聲" 之同意條款說明'
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/line"
+            app:layout_constraintTop_toBottomOf="@+id/line" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/title_heart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#B9B9B9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_heart" />
+
+        <TextView
+            android:id="@+id/title_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="心聲"
+            android:textColor="#FF6363"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
